@@ -1,0 +1,5 @@
+_assetic:
+    resource: .
+    type: assetic
+_app:
+    resource: /Users/louisdiane/Desktop/WSF/Techno/Symfony/fortune/app/config/routing_dev.yml

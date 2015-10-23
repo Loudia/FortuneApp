@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+  {% for fortune in fortunes %}
+    <div>{{ include('default/index.html.twig') }}</div>
+    {% for comments in fortune.comments %}
+      <div class="comments">
+        <h3>{{ comments.author }}</h3>
+        <p>{{ comments.content }}</p>
+      </div>
+    {% endfor %}
+  {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% for fortune in findAuthor %}
+    <div>{{ fortune.author }}</div>
+    <div>{{ fortune.title }}</div>
+    <div>{{ fortune.content }}</div>
+    {% endfor %}
+{% endblock %}
